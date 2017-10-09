@@ -1,0 +1,30 @@
+{
+  "name": "ethical-server-middleware-session",
+  "version": "0.0.0",
+  "description": "Session manager middleware for the Ethical framework server utility.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "test": "nutra --config ./nutra.config.js && npm run prepublish",
+    "test-debugger": "DEBUG=1 node --inspect-brk ./node_modules/.bin/nutra --config ./nutra.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethically/ethical-server-middleware-session.git"
+  },
+  "author": "m-a-r-c-e-l-i-n-o <me@marceli.no>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "ethical-utility-server": "0.0.0",
+    "nutra": "0.0.13",
+    "nutra-jasmine-coverage-babel-preset": "0.0.8",
+    "zombie": "^5.0.5"
+  },
+  "dependencies": {
+    "uid-safe": "^2.1.4"
+  }
+}

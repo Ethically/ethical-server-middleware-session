@@ -1,0 +1,17 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "node": "7.5"
+                },
+                "debug": true,
+                "useBuiltIns": true
+            }
+        ]
+    ],
+    "plugins": [
+        [ "transform-object-rest-spread", { "useBuiltIns": true } ]
+    ]
+}
